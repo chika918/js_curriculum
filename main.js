@@ -1,22 +1,38 @@
-console.log("Hello World!!")
-/*console.log(65536)
-console.log(10+5)
-console.log(10*5)
-console.log("Hello " + "World!!")
+//JavaScript条件分岐・演算子
 /*
-// コメント　１行
-/*
-コメント
-２行以上
-console.log(10 % 2)
-console.log(10 % 3)
+問1：次の条件を、論理演算子を使って表してください。
+・変数aは10ではない
+・変数bは10以上20未満、かつ偶数である。
 */
-
-//JS理解度チェック①
-console.log("10+8")
-console.log(10+8)
-console.log("20割る3の余りは"+ 20 % 3)
-
-//ダイアログボックス
-window.alert("Hello World!!")
-aa
+let a = 11;
+let b = 18;
+if(a != 10){
+    console.log(a);
+}
+if(b >=10 && b <20 && b % 2 ===0){
+    console.log(b);
+}
+/*
+問2：以下の条件を満たすように、記述してください
+・変数xが、10〜20の値だった場合「成功です」と出力される
+・それ以外は「失敗です」と出力される
+・変数xには、最初に10を入れておいてください
+*/
+let x = 10;
+if (x >= 10 && x <= 20){
+    console.log('成功です');
+} else {
+    console.log('失敗です')
+}
+/*
+問3：以下の条件を満たすように、記述してください
+・変数yが偶数なら「偶数です」と出力される
+・変数yが奇数なら「奇数です」と出力される
+・変数yには、最初に0を入れておいてください
+*/
+let y = 0
+if (y % 2 === 0){
+    console.log('偶数です');
+} else if (y % 2 !== 0){
+    console.log('奇数です')
+}
