@@ -6,3 +6,21 @@
 （コンストラクタで渡ってきた引数をセットする）
 ・「中身は〇〇です」と中身を出力する関数を作成してください。
 */
+
+class Taiyaki{
+    constructor(anko,cream,cheese){
+        this.anko = anko;
+        this.cream = cream;
+        this.cheese = cheese;
+    }
+
+    tast(){
+        console.log(`中身は${this.anko}です`)
+    }
+}
+let anko = new Taiyaki('あんこ')
+let cream = new Taiyaki('クリーム')
+let cheese = new Taiyaki('チーズ')
+anko.tast();
+cream.tast();
+cheese.tast();
