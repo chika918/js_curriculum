@@ -4,7 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #btn {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 50%;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;;
+            font-weight: bold;
+            user-select: none;
+        }
+        #btn:hover {
+            opacity: 0.9;
+        }
+    </style>
 </head>
 <body>
+    <div id="btn">クリック</div>
+    <script>
+    //btnを取得→不要？
+    //const btn = document.getElementById('btn');
+
+    // ボタンがクリックされたら、という処理の始まり
+    //①配列で「大吉」「中吉」「凶」を準備
+    //②乱数を発生させて、その値を取得
+    //③取得した **btn** の「クリック」という文字を配列の中身の文字にランダムに変化させる
+    btn.addEventListener('click', function() {
+        let list = ['大吉','中吉','凶'];
+        let number = Math.floor(Math.random() * list.length);
+        btn.textContent = list[number];
+    }, false);
+    </script>
 </body>
 </html>
