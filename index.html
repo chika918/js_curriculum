@@ -37,6 +37,27 @@
         </tr>
     </table>
     <script>
+        let jpn = document.getElementById('jpn');
+        let en = document.getElementById('en');
+        function changeLang() {
+            let selected = document.getElementById("selectbox").value;
+            if(selected == "1"){
+                jpn.style.display = "";
+                en.style.display = "none";
+            } else if (selected == "2"){
+                jpn.style.display = "none";
+                en.style.display = "";   
+            } else if (selected == "3"){
+                jpn.style.display = "";
+                en.style.display = "";   
+            }
+            //「選択してください」を選択時の挙動が不要なら下記の条件は不要
+            else if (selected == "0"){
+                jpn.style.display = "none";
+                en.style.display = "none";
+            }
+        }
+        /*　提出時のコード
         function changeLang() {
             if(document.getElementById("selectbox")){
                 selected = document.getElementById("selectbox").value;
@@ -58,6 +79,7 @@
             }
             
         }
+        */
     </script>
 </body>
 </html>
